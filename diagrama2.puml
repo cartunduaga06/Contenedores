@@ -1,0 +1,21 @@
+@startuml
+class Contenedor {
+- int identificacion
+- String pais
+- boolean marca
++ int getIdentificacion()
++ String getPais()
++ boolean isMarca()
++ String toString()
+}
+class Main {
++ {static} void main(String[])
+}
+class Puerto {
+- String nombre
+- ArrayList<Contenedor> contenedores
++ void mostrarContenedores()
++ void agregarContenedor(Contenedor)
++ int cantidadContenedoresPeligrosos()
+}
+@enduml
